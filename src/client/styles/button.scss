@@ -1,0 +1,57 @@
+
+// variable
+$margin: 200px auto 0;
+$fuschia: #ff0081;
+$button-bg: $fuschia;
+$button-text-color: #fff;
+$baby-blue: #f8faff;
+
+// button 
+%secondry-btn {
+    border: 2px solid #ff0081;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.432);
+    font-size: 16px;
+    color: #ff0081;
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+
+
+    &:hover {
+
+        box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+    }
+}
+
+%primary-button {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    display: inline-block;
+    font-size: 1em;
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    appearance: none;
+    background-color: $button-bg;
+    color: $button-text-color;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+}
+
+.primary {
+    @extend %primary-button;
+}
+
+.secondry {
+    @extend %secondry-btn;
+}

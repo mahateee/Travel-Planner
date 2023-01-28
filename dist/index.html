@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <base href="/">
+<link href="main.css" rel="stylesheet"></head>
+
+<body>
+
+    <section class="section-1">
+        <div class="welcome">
+            <h1>Discover</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, hic!
+            </p>
+            <button class="primary">Read More</button>
+            <button class="secondry">Join Us</button>
+        </div>
+        <div class="container">
+            <div class="plan">
+                <p><i class="fa-solid fa-plane"></i> First Class</p>
+                <h6><span class="city">Jeddah, </span> <span class="country">KSA</span> to <span class="city">Dubai,
+                    </span> <span class="country">UAE</span></h6>
+                <p><i class="fa-solid fa-location-dot"></i> .  .  .  .  .  .  .  .  .  .  .  .  .  . <span>2 hrs</span></p>
+                <button class="primary">Read More</button>
+                <button class="secondry">Join Us</button>
+            </div>
+            <div class="plan">
+                <p><i class="fa-solid fa-plane"></i> First Class</p>
+                <h6><span class="city">Jeddah, </span> <span class="country">KSA</span> to <span class="city">Dubai,
+                    </span> <span class="country">UAE</span></h6>
+                <p><i class="fa-solid fa-location-dot"></i>  .  .  .  .  .  .  .  .  .  .  .  .  .  .  <span>2 hrs</span></p>
+                <button class="primary">Read More</button>
+                <button class="secondry">Join Us</button>
+            </div>
+            <div class="plan">
+                <p><i class="fa-solid fa-plane"></i> First Class</p>
+                <h6><span class="city">Jeddah, </span> <span class="country">KSA</span> to <span class="city">Dubai,
+                    </span> <span class="country">UAE</span></h6>
+                <p><i class="fa-solid fa-location-dot"></i>  .  .  .  .  .  .  .  .  .  .  .  .  .  .  <span>2 hrs</span></p>
+                <button class="primary">Read More</button>
+                <button class="secondry">Join Us</button>
+            </div>
+
+        </div>
+    </section>
+    
+    <section id="section2" class="section-2">
+        <h2>Plan your trip</h2>
+        <form class="form" onsubmit="return handleSubmit(event)">
+            <div>
+
+                <label for="name">City Name:</label>
+                <input id="name" type="text" name="input" value="" placeholder="">
+
+            </div>
+            <div class="date">
+                <div class="start">
+                    <label for="start">Start date:</label>
+                    <input type="date" id="start" name="trip-start" value="2023-01-01" min="2023-01-01"
+                        max="2025-12-31">
+                </div>
+                <div class="end">
+                    <label for="end">End date:</label>
+                    <input type="date" id="end" name="trip-end" value="2023-01-01" min="2023-01-01" max="2025-12-31">
+                </div>
+
+            </div>
+            <input type="submit" id="btn-submit" name="" value="submit">
+
+        </form>
+        <div class="container-2">
+
+        </div>
+    </section>
+
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+<script type="text/javascript" src="main.js"></script></body>
+
+</html>
